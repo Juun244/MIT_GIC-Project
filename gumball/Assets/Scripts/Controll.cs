@@ -31,7 +31,7 @@ public class Controll : MonoBehaviour
         {
             DownMove();
         }
-        transform.position = Vector3.Lerp(transform.position, target.transform.position, speed);
+        transform.position = Vector3.Lerp(transform.position, target.transform.position, speed*Time.deltaTime);
     }
     public void LeftMove()
     {
